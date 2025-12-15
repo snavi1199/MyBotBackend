@@ -5,7 +5,7 @@ import chatRouter from "./chatRoute.js";
 const app = express();
 
 const allowedOrigins = [
-    'https://speech-rho.vercel.app', // production
+    'https://my-bot-front.vercel.app', // production
     'http://localhost:3000'          // local
 ];
 
@@ -44,3 +44,4 @@ const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`✅ Server running on port ${PORT}`);
 });
+
