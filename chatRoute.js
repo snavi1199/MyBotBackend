@@ -2,7 +2,7 @@ import express from "express";
 import fetch from "node-fetch";
 
 const router = express.Router();
-const OR_URL = "66682dc8547be6c7fcb55da464eb28d59ad953fb473f85fa431b92c341ca0b16";
+const OR_URL = "d2da0fc3310f27b4f28017799acb877e6309a25547fbe138c51aeadd3fde6243"; //key id - ammaappa401
 
 const resumeContext = `Full Stack Software Engineer with 5 years of experience specializing in React, TypeScript, Redux Toolkit, and Micro-Frontend architecture (Single-SPA). Proven expertise in building scalable enterprise web applications, integrating Go and Java Spring Boot microservices, and optimizing performance through code splitting and lazy loading. Strong background in RESTful APIs, cloud-ready systems, CI/CD pipelines, and automated testing (Jest, Cypress).
 TECHNICAL SKILLS
@@ -117,5 +117,6 @@ router.post("/", async (req, res) => {
 });
 
 export default router;
+
 
 
