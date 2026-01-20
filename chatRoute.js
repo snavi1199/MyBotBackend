@@ -52,8 +52,10 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-    const { prompt, role } = req.body;
-    const authKey = `sk-or-v1-${OR_URL}`;
+    // const { prompt, role } = req.body;
+    // const authKey = `sk-or-v1-${OR_URL}`;
+    const { prompt, role, apiKey } = req.body;
+    const authKey = apiKey ? `sk-or-v1-${apiKey}` : `sk-or-v1-${OR_URL}`; // added new api key if present
     const resume = resumeContext || '';
 
     if (!prompt || !authKey) {
@@ -117,6 +119,7 @@ router.post("/", async (req, res) => {
 });
 
 export default router;
+
 
 
 
